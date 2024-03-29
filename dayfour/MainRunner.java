@@ -2,9 +2,6 @@ package weekfour.dayfour;
 
 public class MainRunner {
     public static void main(String[] args) {
-
-
-
         Bank<BankAccount> myBank = new Bank<>();
 
         CheckingAccount pncChecking = new CheckingAccount(42,5000.00,100.00);
@@ -19,7 +16,6 @@ public class MainRunner {
 
         System.out.println(CreditCard.tierCheck(amex.getCcNumber()));
 
-
         System.out.println(myBank.getTotalBalance());
         pncSavings.withdraw(300);
         pncChecking.withdraw(200);
@@ -27,6 +23,14 @@ public class MainRunner {
 
         System.out.println(myBank.getTotalBalance());
 
+        BankAccount account1 = new CheckingAccount(1, 1000, 2000);
+        account1.contactBankManager();
 
+        CreditCard account2 = new CreditCard(2, 2000, "111-222-333");
+        //System.out.println("credit card account: ");
+        account2.contactBankManager();
+
+        BankAccount savings = new SavingsAccount(3, 3000, 2);
+        savings.contactBankManager();
     }
 }

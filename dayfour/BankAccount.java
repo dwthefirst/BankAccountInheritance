@@ -1,6 +1,6 @@
 package weekfour.dayfour;
 
-public abstract class BankAccount {
+public abstract class BankAccount implements ContactBankStaff{
 
     private int accountNumber;
 
@@ -31,5 +31,10 @@ public abstract class BankAccount {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+
+    public void contactBankManager() {
+        System.out.println("To: Bank Manager: " + ContactBankStaff.bankManager + " Account: " + this.getClass().getSimpleName());
     }
 }

@@ -26,4 +26,9 @@ public class CheckingAccount extends BankAccount{
             System.out.println("Withdraw failed: not enough funds");
         }
     }
+
+//    @Override
+//    public void contactBankManager() {
+//        System.out.println("To: Bank Manager: " + ContactBankStaff.bankManager + " Account: " + this.getClass().getSimpleName());
+//    }
 }

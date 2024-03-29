@@ -48,4 +48,10 @@ public class CreditCard extends BankAccount {
             return "Bronze";
         }
     }
+
+    @Override
+    public void contactBankManager() {
+        //super.contactBankManager();
+        System.out.println("To: Bank Manager: " + ContactBankStaff.bankManager + " This is a: " + this.getClass().getSimpleName());
+    }
 }

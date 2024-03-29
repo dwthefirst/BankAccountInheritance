@@ -26,4 +26,10 @@ public class SavingsAccount extends BankAccount{
             System.out.println("Withdraw failed: not enough funds");
         }
     }
+
+//    @Override
+//    public void contactBankManager() {
+//        super
+//        //System.out.println("Savings account!");
+//    }
 }
